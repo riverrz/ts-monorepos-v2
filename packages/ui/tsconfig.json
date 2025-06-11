@@ -9,5 +9,10 @@
     "postcss.config.cjs",
     "vite.config.ts",
     "svelte.config.js"
+  ],
+  "references": [
+    {
+      "path": "../models/tsconfig.build.json"
+    }
   ]
 }

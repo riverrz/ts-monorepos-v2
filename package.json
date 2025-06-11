@@ -6,7 +6,7 @@
     "lint": "pnpm --color run -r lint",
     "check": "pnpm --color run -r check",
     "test": "pnpm --color run -r test",
-    "format": "prettier --write packages/*/{src,tests}/**/*.ts packages/*/{tailwind.config.js,postcss.config.cjs,vite.config.ts,svelte.config.js,eslint.config.mts}",
+    "format": "prettier --write packages/*/{src,tests}/**/*.ts packages/*/{tailwind.config.js,postcss.config.cjs,vite.config.ts,svelte.config.js}",
     "dev": "pnpm --color run -r dev"
   },
   "volta": {
