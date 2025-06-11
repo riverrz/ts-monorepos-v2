@@ -6,10 +6,14 @@
     "lint": "pnpm --color run -r lint",
     "check": "pnpm --color run -r check",
     "test": "pnpm --color run -r test",
-    "format": "pnpm --color run -r format",
+  "format": "prettier --write packages/*/{src,tests}/**/*.ts packages/*/{tailwind.config.js,postcss.config.cjs,vite.config.ts,svelte.config.js,eslint.config.mts}",
     "dev": "pnpm --color run -r dev"
   },
 	"volta": {
 		"node": "22.16.0"
-	}
+	},
+  "devDependencies": {
+    "prettier": "^3.5.3",
+    "prettier-plugin-svelte": "^3.4.0"
+  }
 }
