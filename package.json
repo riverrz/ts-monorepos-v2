@@ -8,5 +8,8 @@
     "test": "pnpm --color run -r test",
     "format": "pnpm --color run -r format",
     "dev": "pnpm --color run -r dev"
-  }
+  },
+	"volta": {
+		"node": "22.16.0"
+	}
 }
