@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "noEmit": true,
+    "noImplicitAny": true,
+    "allowJs": true,
+    "strict": true,
+    "allowSyntheticDefaultImports": true,
+    "noUncheckedSideEffectImports": true
+  },
+  "include": [
+    "packages/*/src/**/*.ts",
+    "packages/*/src/**/*.js",
+    "packages/*/tests/**/*.ts",
+    "packages/*/tests/**/*.js"
+  ],
+  "exclude": ["**/assets/**/*", "node_modules", "dist"]
+}
