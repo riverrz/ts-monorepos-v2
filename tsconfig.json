@@ -14,7 +14,8 @@
     "packages/*/src/**/*.ts",
     "packages/*/src/**/*.js",
     "packages/*/tests/**/*.ts",
-    "packages/*/tests/**/*.js"
+    "packages/*/tests/**/*.js",
+    "eslint.config.mts"
   ],
   "exclude": ["**/assets/**/*", "node_modules", "dist"]
 }

@@ -6,14 +6,19 @@
     "lint": "pnpm --color run -r lint",
     "check": "pnpm --color run -r check",
     "test": "pnpm --color run -r test",
-  "format": "prettier --write packages/*/{src,tests}/**/*.ts packages/*/{tailwind.config.js,postcss.config.cjs,vite.config.ts,svelte.config.js,eslint.config.mts}",
+    "format": "prettier --write packages/*/{src,tests}/**/*.ts packages/*/{tailwind.config.js,postcss.config.cjs,vite.config.ts,svelte.config.js,eslint.config.mts}",
     "dev": "pnpm --color run -r dev"
   },
-	"volta": {
-		"node": "22.16.0"
-	},
+  "volta": {
+    "node": "22.16.0"
+  },
   "devDependencies": {
+    "@eslint/js": "^9.28.0",
+    "@types/node": "^24.0.0",
+    "eslint": "^9.28.0",
     "prettier": "^3.5.3",
-    "prettier-plugin-svelte": "^3.4.0"
+    "prettier-plugin-svelte": "^3.4.0",
+    "typescript": "~5.8.3",
+    "typescript-eslint": "^8.34.0"
   }
 }
