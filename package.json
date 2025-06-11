@@ -1,24 +1,28 @@
 {
-  "name": "seeds",
-  "private": true,
-  "scripts": {
-    "build": "pnpm --color run -r build",
-    "lint": "pnpm --color run -r lint",
-    "check": "pnpm --color run -r check",
-    "test": "pnpm --color run -r test",
-    "format": "prettier --write packages/*/{src,tests}/**/*.ts packages/*/{tailwind.config.js,postcss.config.cjs,vite.config.ts,svelte.config.js}",
-    "dev": "pnpm --color run -r dev"
-  },
-  "volta": {
-    "node": "22.16.0"
-  },
-  "devDependencies": {
-    "@eslint/js": "^9.28.0",
-    "@types/node": "^24.0.0",
-    "eslint": "^9.28.0",
-    "prettier": "^3.5.3",
-    "prettier-plugin-svelte": "^3.4.0",
-    "typescript": "~5.8.3",
-    "typescript-eslint": "^8.34.0"
-  }
+	"name": "seeds",
+	"private": true,
+	"repository": "https://github.com/mike-north/ts-monorepos-v2",
+	"scripts": {
+		"build": "pnpm --color run -r build",
+		"lint": "pnpm --color run -r lint && pnpm --color manifests-lint",
+		"check": "pnpm --color run -r check",
+		"test": "pnpm --color run -r test",
+		"format": "prettier --write packages/*/{src,tests}/**/*.ts packages/*/{tailwind.config.js,postcss.config.cjs,vite.config.ts,svelte.config.js}",
+		"dev": "pnpm --color run -r dev",
+		"manifests-lint": "pnpm manypkg check",
+		"manifests-fix": "pnpm manypkg fix"
+	},
+	"volta": {
+		"node": "22.16.0"
+	},
+	"devDependencies": {
+		"@eslint/js": "^9.28.0",
+		"@manypkg/cli": "^0.24.0",
+		"@types/node": "^24.0.0",
+		"eslint": "^9.28.0",
+		"prettier": "^3.5.3",
+		"prettier-plugin-svelte": "^3.4.0",
+		"typescript": "~5.8.3",
+		"typescript-eslint": "^8.34.0"
+	}
 }
