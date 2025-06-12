@@ -21,10 +21,12 @@
     "concurrently": "^9.1.2",
     "eslint": "^9.28.0",
     "knip": "^5.60.2",
+    "lerna": "^8.2.2",
     "prettier": "^3.5.3",
     "prettier-plugin-svelte": "^3.4.0",
     "syncpack": "14.0.0-alpha.13",
     "typescript": "~5.8.3",
     "typescript-eslint": "^8.34.0"
-  }
+  },
+  "dependencies": {}
 }
