@@ -1,6 +1,0 @@
-{
-  "typescript.tsdk": "node_modules/typescript/lib",
-  "nxConsole.nxWorkspacePath": "",
-  "nxConsole.generateAiAgentRules": true,
-  "files.associations": { "*.json": "jsonc" }
-}
