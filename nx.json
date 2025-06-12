@@ -1,54 +1,33 @@
 {
-  "$schema": "./node_modules/nx/schemas/nx-schema.json",
-  "targetDefaults": {
-    "build": {
-      "dependsOn": [
-        "^build"
-      ],
-      "outputs": [
-        "{projectRoot}/dist"
-      ],
-      "cache": true
-    },
-    "dev": {
-      "dependsOn": [
-        "^dev"
-      ]
-    },
-    "check": {
-      "cache": true
-    },
-    "lint": {
-      "cache": true
-    },
-    "test": {
-      "cache": true
-    },
-    "test:coverage": {
-      "cache": true
-    }
-  },
-  "plugins": [
-    {
-      "plugin": "@nx/eslint/plugin",
-      "options": {
-        "targetName": "lint"
-      }
-    },
-    {
-      "plugin": "@nx/vite/plugin",
-      "options": {
-        "buildTargetName": "vite:build",
-        "testTargetName": "vite:test",
-        "serveTargetName": "serve",
-        "devTargetName": "vite:dev",
-        "previewTargetName": "vite:preview",
-        "serveStaticTargetName": "serve-static",
-        "typecheckTargetName": "typecheck",
-        "buildDepsTargetName": "build-deps",
-        "watchDepsTargetName": "watch-deps"
-      }
-    }
-  ],
-  "nxCloudId": "684a4469ec773a20feabc612"
+	"$schema": "./node_modules/nx/schemas/nx-schema.json",
+	"targetDefaults": {
+		"build": {
+			"dependsOn": ["^build"],
+			"outputs": ["{projectRoot}/dist"],
+			"cache": true
+		},
+		"dev": { "dependsOn": ["^dev"] },
+		"check": { "cache": true },
+		"lint": { "cache": true },
+		"test": { "cache": true },
+		"test:coverage": { "cache": true }
+	},
+	"plugins": [
+		{ "plugin": "@nx/eslint/plugin", "options": { "targetName": "lint" } },
+		{
+			"plugin": "@nx/vite/plugin",
+			"options": {
+				"buildTargetName": "vite:build",
+				"testTargetName": "vite:test",
+				"serveTargetName": "serve",
+				"devTargetName": "vite:dev",
+				"previewTargetName": "vite:preview",
+				"serveStaticTargetName": "serve-static",
+				"typecheckTargetName": "typecheck",
+				"buildDepsTargetName": "build-deps",
+				"watchDepsTargetName": "watch-deps"
+			}
+		}
+	],
+	"nxCloudId": "684a4650430f766b0daa7ad0"
 }

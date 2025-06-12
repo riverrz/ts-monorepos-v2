@@ -31,9 +31,9 @@
 		"dev": "nx serve",
 		"lint": "eslint .",
 		"preview": "nx vite:preview",
-		"test": "nx vite:test run",
-		"test:coverage": "nx vite:test run --coverage",
-		"test:ui": "nx vite:test --ui",
+		"test": "nx vite:test -- run",
+		"test:coverage": "nx vite:test -- run --coverage",
+		"test:ui": "nx vite:test -- --ui",
 		"test:watch": "nx vite:test"
 	},
 	"type": "module",
