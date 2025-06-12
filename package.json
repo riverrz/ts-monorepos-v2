@@ -6,6 +6,7 @@
     "@types/node": "^24.0.0",
     "eslint": "^9.28.0",
     "knip": "^5.60.2",
+    "lerna": "^8.2.2",
     "prettier": "^3.5.3",
     "prettier-plugin-svelte": "^3.4.0",
     "syncpack": "14.0.0-alpha.13",
@@ -27,5 +28,6 @@
   },
   "volta": {
     "node": "22.16.0"
-  }
+  },
+  "dependencies": {}
 }
