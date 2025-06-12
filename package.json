@@ -17,7 +17,7 @@
   "scripts": {
     "build": "pnpm --color run -r build",
     "check": "pnpm --color run -r check",
-    "dev": "pnpm --color run -r dev",
+    "dev": "./scripts/dev.sh",
     "format": "prettier --write packages/*/{src,tests}/**/*.ts packages/*/{tailwind.config.js,postcss.config.cjs,vite.config.ts,svelte.config.js}",
     "lint": "pnpm --color run -r lint && pnpm --color manifests-lint",
     "manifests-fix": "pnpm manypkg fix",
