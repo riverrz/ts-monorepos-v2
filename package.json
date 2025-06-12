@@ -16,13 +16,14 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.28.0",
-    "eslint": "^9.28.0",
-    "typescript-eslint": "^8.34.0",
-    "typescript": "~5.8.3",
-    "@types/node": "^24.0.0",
     "@manypkg/cli": "^0.24.0",
+    "@types/node": "^24.0.0",
+    "eslint": "^9.28.0",
+    "knip": "^5.60.2",
     "prettier": "^3.5.3",
     "prettier-plugin-svelte": "^3.4.0",
-    "syncpack": "14.0.0-alpha.13"
+    "syncpack": "14.0.0-alpha.13",
+    "typescript": "~5.8.3",
+    "typescript-eslint": "^8.34.0"
   }
 }
