@@ -180,7 +180,7 @@ svg {
 					text-anchor="middle"
 					fill="#222"
 					class="title"
-				>
+			>
 					{#each wrapText(seedPacket.commonName, 20) as line, index}
 						<tspan x="200" dy={index === 0 ? 0 : 35}>{line}</tspan>
 					{/each}

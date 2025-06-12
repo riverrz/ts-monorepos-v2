@@ -577,6 +577,7 @@ interface CompanionPlanting {
 	goodCompanions?: string[] // Plants that grow well together
 	badCompanions?: string[] // Plants that should be kept apart
 	allelopathicEffects?: string[] // Chemicals this plant releases that affect others
+	favorite?: boolean
 }
 
 /**
