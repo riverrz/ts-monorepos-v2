@@ -5,6 +5,7 @@
   "type": "module",
   "types": "dist/index.d.ts",
   "module": "dist/index.js",
+  "repository": "https://github.com/mike-north/ts-monorepos-v2/tree/main/packages/models",
   "scripts": {
     "test": "vitest run",
     "test:watch": "vitest",
