@@ -1,43 +1,43 @@
 {
-  "name": "@seeds/ui",
-  "version": "0.0.0",
-  "devDependencies": {
-    "@seeds/models": "workspace:*",
-    "@sveltejs/vite-plugin-svelte": "^5.0.3",
-    "@tailwindcss/postcss": "^4.1.8",
-    "@testing-library/jest-dom": "^6.6.3",
-    "@testing-library/svelte": "^5.2.8",
-    "@tsconfig/svelte": "^5.0.4",
-    "@vitest/coverage-v8": "^3.2.3",
-    "@vitest/ui": "^3.2.3",
-    "autoprefixer": "^10.4.21",
-    "concurrently": "^9.1.2",
-    "daisyui": "^5.0.43",
-    "jsdom": "^26.1.0",
-    "postcss": "^8.5.4",
-    "sass-embedded": "^1.89.2",
-    "svelte": "^5.28.1",
-    "svelte-check": "^4.1.6",
-    "tailwindcss": "^4.1.8",
-    "typescript": "~5.8.3",
-    "vite": "^6.3.5",
-    "vitest": "^3.2.3"
-  },
-  "private": true,
-  "repository": "https://github.com/mike-north/ts-monorepos-v2/tree/main/packages/ui",
-  "scripts": {
-    "build": "vite build",
-    "check": "svelte-check --tsconfig ./tsconfig.app.json && tsc -p tsconfig.node.json",
-    "dev": "vite",
-    "lint": "eslint .",
-    "preview": "vite preview",
-    "test": "vitest run",
-    "test:coverage": "vitest run --coverage",
-    "test:ui": "vitest --ui",
-    "test:watch": "vitest"
-  },
-  "type": "module",
-  "volta": {
-    "node": "22.16.0"
-  }
+	"name": "@seeds/ui",
+	"version": "0.0.0",
+	"devDependencies": {
+		"@seeds/models": "workspace:*",
+		"@sveltejs/vite-plugin-svelte": "^5.0.3",
+		"@tailwindcss/postcss": "^4.1.8",
+		"@testing-library/jest-dom": "^6.6.3",
+		"@testing-library/svelte": "^5.2.8",
+		"@tsconfig/svelte": "^5.0.4",
+		"@vitest/coverage-v8": "^3.2.3",
+		"@vitest/ui": "^3.2.3",
+		"autoprefixer": "^10.4.21",
+		"concurrently": "^9.1.2",
+		"daisyui": "^5.0.43",
+		"jsdom": "^26.1.0",
+		"postcss": "^8.5.4",
+		"sass-embedded": "^1.89.2",
+		"svelte": "^5.28.1",
+		"svelte-check": "^4.1.6",
+		"tailwindcss": "^4.1.8",
+		"typescript": "~5.8.3",
+		"vite": "^6.3.5",
+		"vitest": "^3.2.3"
+	},
+	"private": true,
+	"repository": "https://github.com/mike-north/ts-monorepos-v2/tree/main/packages/ui",
+	"scripts": {
+		"build": "nx vite:build",
+		"check": "svelte-check --tsconfig ./tsconfig.app.json && tsc -p tsconfig.node.json",
+		"dev": "nx serve",
+		"lint": "eslint .",
+		"preview": "nx vite:preview",
+		"test": "nx vite:test run",
+		"test:coverage": "nx vite:test run --coverage",
+		"test:ui": "nx vite:test --ui",
+		"test:watch": "nx vite:test"
+	},
+	"type": "module",
+	"volta": {
+		"node": "22.16.0"
+	}
 }
