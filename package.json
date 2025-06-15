@@ -1,21 +1,23 @@
 {
-  "name": "seeds",
-  "version": "0.0.1",
-  "devDependencies": {
-    "@manypkg/cli": "^0.24.0",
-    "syncpack": "14.0.0-alpha.13"
-  },
-  "private": true,
-  "repository": "https://github.com/riverrz/ts-monorepos-v2",
-  "scripts": {
-    "build": "pnpm --color run -r build",
-    "check": "pnpm --color run -r check",
-    "dev": "pnpm --color run -r dev",
-    "format": "pnpm --color run -r format",
-    "lint": "pnpm --color run -r lint",
-    "test": "pnpm --color run -r test"
-  },
-  "volta": {
-    "node": "22.16.0"
-  }
+	"name": "seeds",
+	"version": "0.0.1",
+	"devDependencies": {
+		"@manypkg/cli": "^0.24.0",
+		"syncpack": "14.0.0-alpha.13",
+		"prettier": "^3.5.3",
+		"prettier-plugin-svelte": "^3.4.0"
+	},
+	"private": true,
+	"repository": "https://github.com/riverrz/ts-monorepos-v2",
+	"scripts": {
+		"build": "pnpm --color run -r build",
+		"check": "pnpm --color run -r check",
+		"dev": "pnpm --color run -r dev",
+		"format": "prettier --write packages/*/{src,tests}/**/*.ts packages/*/{tailwind.config.js,postcss.config.cjs,vite.config.ts,svelte.config.js}",
+		"lint": "pnpm --color run -r lint",
+		"test": "pnpm --color run -r test"
+	},
+	"volta": {
+		"node": "22.16.0"
+	}
 }
