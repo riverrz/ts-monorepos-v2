@@ -2,6 +2,7 @@
   "name": "seeds",
   "version": "0.0.1",
   "private": true,
+  "repository": "https://github.com/riverrz/ts-monorepos-v2",
   "scripts": {
     "build": "pnpm --color run -r build",
     "lint": "pnpm --color run -r lint",
@@ -12,5 +13,8 @@
   },
   "volta": {
     "node": "22.16.0"
+  },
+  "devDependencies": {
+    "@manypkg/cli": "^0.24.0"
   }
 }
