@@ -16,7 +16,8 @@
     "packages/**/src/**/*.svelte",
     "packages/**/tests/**/*.ts",
     "packages/**/tests/**/*.js",
-    "packages/**/tests/**/*.svelte"
+    "packages/**/tests/**/*.svelte",
+    "eslint.config.mts"
   ],
   "exclude": ["**/assets/**/*", "node_modules", "dist"]
 }

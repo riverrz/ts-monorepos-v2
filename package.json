@@ -2,10 +2,14 @@
 	"name": "seeds",
 	"version": "0.0.1",
 	"devDependencies": {
+		"@eslint/js": "^9.28.0",
 		"@manypkg/cli": "^0.24.0",
-		"syncpack": "14.0.0-alpha.13",
+		"@types/node": "^24.0.0",
+		"eslint": "^9.28.0",
 		"prettier": "^3.5.3",
-		"prettier-plugin-svelte": "^3.4.0"
+		"prettier-plugin-svelte": "^3.4.0",
+		"syncpack": "14.0.0-alpha.13",
+		"typescript-eslint": "^8.34.0"
 	},
 	"private": true,
 	"repository": "https://github.com/riverrz/ts-monorepos-v2",
