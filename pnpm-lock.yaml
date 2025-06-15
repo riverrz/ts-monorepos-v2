@@ -41,6 +41,9 @@ importers:
 
   packages/models:
     devDependencies:
+      '@microsoft/api-documenter':
+        specifier: ^7.26.27
+        version: 7.26.27(@types/node@24.0.0)
       '@microsoft/api-extractor':
         specifier: ^7.52.8
         version: 7.52.8(@types/node@24.0.0)
@@ -504,6 +507,10 @@ packages:
   '@manypkg/tools@2.0.0':
     resolution: {integrity: sha512-o4ZC8J9OmFT6Ar8hhObWrFe7M7TRFuskm8ROhroZZWdQ+/V1+RswP74wJkkDKY/VDcteKYCACq2PblifRRnj1g==}
     engines: {node: '>=20.0.0'}
+
+  '@microsoft/api-documenter@7.26.27':
+    resolution: {integrity: sha512-POELaGjCyxYBHP0vGUS9SoyClEEA3+YLeGYwEShJ+ttbB/DzdkWDH1IK5pUGxwe/J2bJ7SuRbI7u17O16MrxCA==}
+    hasBin: true
 
   '@microsoft/api-extractor-model@7.30.6':
     resolution: {integrity: sha512-znmFn69wf/AIrwHya3fxX6uB5etSIn6vg4Q4RB/tb5VDDs1rqREc+AvMC/p19MUN13CZ7+V/8pkYPTj7q8tftg==}
@@ -1446,6 +1453,11 @@ packages:
     resolution: {integrity: sha512-j6PAQ2uUr79PZhBjP5C5fhl8e39FmRnOjsD5lGnWrFU8i2G776tBK7+nP8KuQUTTyAZUwfQqXAgrVH5MbH9CYQ==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
+  esprima@4.0.1:
+    resolution: {integrity: sha512-eGuFFw7Upda+g4p+QHvnW0RyTX/SVeJBDM/gCtMARO0cLuT2HcEKnTPvhjV6aGeqrCB/sbNop0Kszm0jsaWU4A==}
+    engines: {node: '>=4'}
+    hasBin: true
+
   esquery@1.6.0:
     resolution: {integrity: sha512-ca9pw9fomFcKPvFLXhBKUK90ZvGibiGOvRJNbjljY7s7uq/5YO4BOzcYtJqExdx99rF6aAcnRxHmcUHcz6sQsg==}
     engines: {node: '>=0.10'}
@@ -1760,6 +1772,10 @@ packages:
 
   js-tokens@9.0.1:
     resolution: {integrity: sha512-mxa9E9ITFOt0ban3j6L5MpjwegGz6lBQmM1IJkWeBZGcMxto50+eWdjC/52xDbS2vy0k7vIMK0Fe2wfL9OQSpQ==}
+
+  js-yaml@3.13.1:
+    resolution: {integrity: sha512-YfbcO7jXDdyj0DGxYVSlSeQNHbD7XPWvrVWeVUujrQEoZzWJIRrCPoyk6kL6IAjAG2IolMK4T0hNUe0HOUs5Jw==}
+    hasBin: true
 
   js-yaml@4.1.0:
     resolution: {integrity: sha512-wpxZs9NoxZaJESJGIZTyDEaYpl0FKSA+FB9aJiyemKhMwkxQg63h4T1KJgUGHpTqPDNRcmmYLugrRjJlBtWvRA==}
@@ -3205,6 +3221,18 @@ snapshots:
       js-yaml: 4.1.0
       tinyglobby: 0.2.14
 
+  '@microsoft/api-documenter@7.26.27(@types/node@24.0.0)':
+    dependencies:
+      '@microsoft/api-extractor-model': 7.30.6(@types/node@24.0.0)
+      '@microsoft/tsdoc': 0.15.1
+      '@rushstack/node-core-library': 5.13.1(@types/node@24.0.0)
+      '@rushstack/terminal': 0.15.3(@types/node@24.0.0)
+      '@rushstack/ts-command-line': 5.0.1(@types/node@24.0.0)
+      js-yaml: 3.13.1
+      resolve: 1.22.10
+    transitivePeerDependencies:
+      - '@types/node'
+
   '@microsoft/api-extractor-model@7.30.6(@types/node@24.0.0)':
     dependencies:
       '@microsoft/tsdoc': 0.15.1
@@ -4206,6 +4234,8 @@ snapshots:
       acorn-jsx: 5.3.2(acorn@8.15.0)
       eslint-visitor-keys: 4.2.1
 
+  esprima@4.0.1: {}
+
   esquery@1.6.0:
     dependencies:
       estraverse: 5.3.0
@@ -4529,6 +4559,11 @@ snapshots:
   js-tokens@4.0.0: {}
 
   js-tokens@9.0.1: {}
+
+  js-yaml@3.13.1:
+    dependencies:
+      argparse: 1.0.10
+      esprima: 4.0.1
 
   js-yaml@4.1.0:
     dependencies:
