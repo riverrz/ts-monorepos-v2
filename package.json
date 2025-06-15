@@ -1,20 +1,21 @@
 {
   "name": "seeds",
   "version": "0.0.1",
+  "devDependencies": {
+    "@manypkg/cli": "^0.24.0",
+    "syncpack": "14.0.0-alpha.13"
+  },
   "private": true,
   "repository": "https://github.com/riverrz/ts-monorepos-v2",
   "scripts": {
     "build": "pnpm --color run -r build",
-    "lint": "pnpm --color run -r lint",
-    "test": "pnpm --color run -r test",
+    "check": "pnpm --color run -r check",
     "dev": "pnpm --color run -r dev",
     "format": "pnpm --color run -r format",
-    "check": "pnpm --color run -r check"
+    "lint": "pnpm --color run -r lint",
+    "test": "pnpm --color run -r test"
   },
   "volta": {
     "node": "22.16.0"
-  },
-  "devDependencies": {
-    "@manypkg/cli": "^0.24.0"
   }
 }
