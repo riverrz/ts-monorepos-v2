@@ -6,4 +6,12 @@
     "vite.config.ts",
     "svelte.config.js"
   ],
+  "compilerOptions": {
+    "composite": true
+  },
+  "references": [
+    {
+      "path": "../models/tsconfig.build.json"
+    }
+  ]
 }
