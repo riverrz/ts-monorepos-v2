@@ -1,29 +1,31 @@
 {
-	"name": "seeds",
-	"version": "0.0.1",
-	"devDependencies": {
-		"@eslint/js": "^9.28.0",
-		"@manypkg/cli": "^0.24.0",
-		"@types/node": "^24.0.0",
-		"concurrently": "^9.1.2",
-		"eslint": "^9.28.0",
-		"knip": "^5.61.0",
-		"prettier": "^3.5.3",
-		"prettier-plugin-svelte": "^3.4.0",
-		"syncpack": "14.0.0-alpha.13",
-		"typescript-eslint": "^8.34.0"
-	},
-	"private": true,
-	"repository": "https://github.com/riverrz/ts-monorepos-v2",
-	"scripts": {
-		"build": "pnpm --color run -r build",
-		"check": "pnpm --color run -r check",
-		"dev": "scripts/dev.sh",
-		"format": "prettier --write packages/*/{src,tests}/**/*.ts packages/*/{tailwind.config.js,postcss.config.cjs,vite.config.ts,svelte.config.js}",
-		"lint": "pnpm --color run -r lint",
-		"test": "pnpm --color run -r test"
-	},
-	"volta": {
-		"node": "22.16.0"
-	}
+  "name": "seeds",
+  "version": "0.0.1",
+  "devDependencies": {
+    "@eslint/js": "^9.28.0",
+    "@manypkg/cli": "^0.24.0",
+    "@types/node": "^24.0.0",
+    "concurrently": "^9.1.2",
+    "eslint": "^9.28.0",
+    "knip": "^5.61.0",
+    "lerna": "^8.2.2",
+    "prettier": "^3.5.3",
+    "prettier-plugin-svelte": "^3.4.0",
+    "syncpack": "14.0.0-alpha.13",
+    "typescript-eslint": "^8.34.0"
+  },
+  "private": true,
+  "repository": "https://github.com/riverrz/ts-monorepos-v2",
+  "scripts": {
+    "build": "pnpm --color run -r build",
+    "check": "pnpm --color run -r check",
+    "dev": "scripts/dev.sh",
+    "format": "prettier --write packages/*/{src,tests}/**/*.ts packages/*/{tailwind.config.js,postcss.config.cjs,vite.config.ts,svelte.config.js}",
+    "lint": "pnpm --color run -r lint",
+    "test": "pnpm --color run -r test"
+  },
+  "volta": {
+    "node": "22.16.0"
+  },
+  "dependencies": {}
 }
